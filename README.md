@@ -1,12 +1,29 @@
 # Optimized-tactile-sensor-model-for-shadow-hand-in-Gym-simulation
-The project supply the XML file and a training policy for the Hand in OpenAI GYM. This sensor configuration reduce the sensor quantities from 92 to 21, but keep over 93% performance in block, egg and pen tasks.
+This project optimized the gym-0.20.0 default tactile sensor configuration for hand tasks.
 
-Environment: Gym-0.2, Mujoco-150
-Please put and replace "robot_touch_sensors_92" and "shared_touch_sensors_92" in this path: gym/envs/robotics/assests/hand
-Then you can use command: test1.py to test if the new configuration takes effect.
+**The project also supply an adding install version in another branch, if you already install the gym, you could directly use that branch.*
 
-A trained policy based on HER and DDPG is also offered. Before import the policy, you should install the HER By following link: https://github.com/TianhongDai/hindsight-experience-replay
+# Requirement
+python = 3.6  
+Mujoco = 150  
+mujoco-py = 1.50.1.0  
+gcc&g++ = 4.8  
+Cython = 0.29.21  
+opencv-python = 4.3.0.38  
+HER (need for running demo)
 
-After installing, put the "HandManipulateBlockTouchSensors-v0" floder in this path: hindsight-experience-replay/saved models
+# Installation
+1. To install this optimized gym version, use  
+`git clone https://github.com/WilliamAlexanda/Optimized-tactile-sensor-model-for-shadow-hand-in-Gym-simulation.git`
 
-end.
+2. To install mjpro150, use this link: https://roboti.us/download.html  
+
+3. To install mojoco-py, use  
+`pip install mujoco-py==1.50.1.0`  
+*Please follow this link to install the license: https://roboti.us/license.html*
+
+4. (Optional) To install HER, please refer to this link: https://github.com/TianhongDai/hindsight-experience-replay  
+
+# Test
+1. After complete step 1~3, you could use `python test1.py` to see if the environment is correctly installed. If correct, the new window will show the dexterous hand with new tactile configuration.
+2. After complete the step 4, you could put the "HandManipulateBlockTouchSensors-v0" into the saved_model floder of HER and use `python demo.py --env-name=HandManipulateBlockTouchSensors` to run the demo.
