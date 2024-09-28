@@ -27,3 +27,6 @@ HER (need for running demo)
 # Test
 1. After complete step 1~3, you could use `python test1.py` to see if the environment is correctly installed. If correct, the new window will show the dexterous hand with new tactile configuration.
 2. After complete the step 4, you could put the "HandManipulateBlockTouchSensors-v0" into the saved_model floder of HER and use `python demo.py --env-name=HandManipulateBlockTouchSensors` to run the demo.
+
+# Reference
+https://github.com/openai/gym/tree/v0.20.0
