@@ -16,11 +16,11 @@ HER (need for running demo)
 1. To install this optimized gym version, use  
 `git clone https://github.com/WilliamAlexanda/Optimized-tactile-sensor-model-for-shadow-hand-in-Gym-simulation.git`
 
-2. To install mjpro150, use this link: https://roboti.us/download.html  
+2. To install mjpro150, use this link: https://roboti.us/download.html
+*Please follow this link to install the license: https://roboti.us/license.html*  
 
 3. To install mojoco-py, use  
 `pip install mujoco-py==1.50.1.0`  
-*Please follow this link to install the license: https://roboti.us/license.html*
 
 4. (Optional) To install HER, please refer to this link: https://github.com/TianhongDai/hindsight-experience-replay  
 
